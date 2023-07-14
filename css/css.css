@@ -9,6 +9,9 @@ li,
 ol {
   list-style: none;
 }
+.mobile-view{
+  display: inline-block;
+}
 a,
 a:hover {
   text-decoration: none;
@@ -107,6 +110,9 @@ a:hover {
 .menubar-left,
 .menubar-right {
   display: flex;
+}
+.menubar-left{
+  display: none;
 }
 .menubar-left li a {
   display: inline-block;
@@ -888,6 +894,15 @@ input:checked ~ .tab-content {
   }
   .container {
     width: 720px;
+  }
+  .menubar-right{
+    display: flex;
+  }
+  .mobile-view{
+    display: none;
+  }
+  .menubar-left{
+    display: flex;
   }
 }
 @media (min-width: 1024px) {

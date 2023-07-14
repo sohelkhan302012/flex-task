@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head>   
     <title>flex-task</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-sclae=1.0" />
@@ -27,18 +27,20 @@
     <header class="header">
       <div class="container">
         <nav class="header-flex">
-          <ul class="menubar-left">
-            <li>
-              <a href="#" class="logo"
+          <a href="#" class="logo"
                 ><img src="images/logo.png" alt="logo"
               /></a>
-            </li>
+          <ul class="menubar-left" id="menubar">
+            
             <li><a href="#">Home </a></li>
             <li><a href="#">Mega Menu</a></li>
             <li><a href="#">Pages </a></li>
             <li><a href="#">Shop</a></li>
             <li><a href="#">News</a></li>
           </ul>
+          <a href="javascript:void(0)" class="mobile-view"  onclick="myFunction()"
+          ><i class="fa-solid fa-bars"></i></a>
+          
           <ul class="menubar-right">
             <li>
               <a href="#"><i class="fa-regular fa-user"></i> Login</a>
@@ -892,5 +894,16 @@
         },
       });
     </script>
+        <script>
+          function myFunction() {
+            var elementId = document.getElementById("menubar");
+            if (elementId.style.display === "block") {
+                elementId.style.display = "none";
+            } else {
+                elementId.style.display = "block";
+            }
+          }
+        </script>
+    
   </body>
 </html>
